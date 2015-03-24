@@ -1,0 +1,193 @@
+/*  CSS FILE: style_1.css
+
+CSS NOTES: 
+
+.Table_of_content - style  "Table of contents" 
+.Important_concepts - style  "Important Concept" 
+.concept - style "Concepts"
+
+H1 - Style for Main Head - Table of Contents, Important Concepts
+H2 - Style for 2nd Head - Lesson 1, Lesson 2, Lesson 3 
+Body - Sytle for Body of the entire program
+P - Style for Paragraphs
+
+ol - make everthing in the table a list
+li - useed roman numerals
+ul - invisible bullet points
+
+
+CSS Concept: 
+font-family: aierl  - type of fonts used
+font-size: 1.5em    -  size of the font 
+
+
+<li> - list items
+<ol> - list items with numbers or letters
+<ul> - list items with bullets
+** Keep in mind that li has to be under ol & ul
+
+The boxmodel is: 
+Content - the stuff we write in it
+Padding - Clears error around the content. The space that protects the content
+Border - goes around the Padding & content 
+Margin  - The area around the board. Has no color
+
+
+
+*/
+
+
+body 
+{
+	font-family: aierl;
+	font-size: 1.0em;
+	padding: 20px 10px;
+	margin: 0 auto; 
+	max-width: 2000px; 
+}
+
+/* H1 - Main Headers CSS*/
+h1
+{
+  /*Inside the box*/
+  font-size: 3.0em;
+	text-align: center;
+	color: yellow;
+  
+  /*Background Color*/
+  background-color: #1047ec; 
+  border-radius: 10px; 
+  padding: 30px;
+  margin:0px;
+  
+  /*Create a Boarder around the box*/
+    border-style: solid;
+    border-width: 5px;
+}
+
+/* H2 - Second Header for Lesson1, Lesson2, and Lesson 3 */
+
+h2
+{
+  font-size: 1.75em;
+	text-align: center;
+	color: white;
+  
+  border-radius: 10px; 
+  padding: 20px;
+  margin:0px;
+}
+
+
+/*Table of content */
+
+ol
+{
+  list-style-type: upper-roman;
+}
+
+li 
+{
+	font-size: 20px;
+	line-height: 60px;  /* Space between each line*/
+}
+
+ul 
+{
+	list-style-type: none;  /* Use invinsible bullets */
+}
+
+
+
+
+/* Important Concepts - controls the white boarder around "Table of Content"*/
+.Table_of_content 
+{
+    
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px; /* The border-radius gives rounded corners.*/
+    padding: 10px;
+    margin: 10px auto;
+}
+
+/* Important Concepts - controls background color around "Important Concept" */
+.Important_concepts
+{
+    border-style: solid;
+    border-width: 5px;
+    background-color:  #1047ec;
+    border-radius: 20px; /* The border-radius gives rounded corners.*/
+    color: black;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.concept
+{
+  font-size: 1.0em;
+	/*font-weight: high;*/
+	margin: 2px;
+  color: blue;
+  background-color: white;
+}
+
+/**/
+p
+{
+  font-size: 1.0em;
+	color: black;
+  
+  background-color: gray; 
+  border-radius: 5px; 
+  padding: 20px;
+  margin:10px;
+}
+
+
+/* Flex Box - to fit text box "Project 1" and "Project 2" next to each other */
+/* .flex_text1_and_text2  = .project2 + .project1  */
+
+.flex_text1_and_text2
+{
+    display: flex;
+}
+
+
+
+.project1
+{
+  font-size: 5.0em;
+  color: black;
+  
+  /*Background Color*/
+  background-color: white; 
+  border-radius: 10px; 
+  padding: 30px;
+  margin:0px;
+  
+  /*Create a Boarder around the box*/
+    border-style: solid;
+    border-width: 5px;
+}
+
+.project2
+{
+font-size: 5.0em;
+  color: black;
+  
+  /*Background Color*/
+  background-color: white; 
+  border-radius: 10px; 
+  padding: 30px;
+  margin:0px;
+  
+  /*Create a Boarder around the box*/
+    border-style: solid;
+    border-width: 5px;
+
+}
+
+
+
+	
